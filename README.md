@@ -67,4 +67,4 @@ Note: some events still have to be added at the moment (see issues).
 Typings are included in the library.
 
 ## License
-MIT © [R. Franken](https://github.com/Robinfr
+MIT © [R. Franken](https://github.com/Robinfr)
