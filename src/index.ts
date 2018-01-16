@@ -4,6 +4,7 @@ import keyboardEvents, { KeyboardEvent } from './keyboard';
 import focusEvents, { FocusEvent } from './focus';
 import formEvents, { FormEvent } from './form';
 import mouseEvents, { MouseEvent } from './mouse';
+import selectionEvents, { SelectionEvent } from './selection';
 
 type EventType =
     | ClipboardEvent
@@ -11,7 +12,8 @@ type EventType =
     | KeyboardEvent
     | FocusEvent
     | FormEvent
-    | MouseEvent;
+    | MouseEvent
+    | SelectionEvent;
 
 const allEvents = {
     ...clipboardEvents,
@@ -19,7 +21,8 @@ const allEvents = {
     ...keyboardEvents,
     ...focusEvents,
     ...formEvents,
-    ...mouseEvents
+    ...mouseEvents,
+    ...selectionEvents
 };
 
 const convertEvent = (eventName: EventType) => allEvents[eventName];
