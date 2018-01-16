@@ -25,6 +25,18 @@ const allEvents = {
     ...selectionEvents
 };
 
-const convertEvent = (eventName: EventType) => allEvents[eventName];
+export interface Events {
+    [propName: string]: (...args: any[]) => any;
+};
 
-export default convertEvent;
+export const convertEvent = (eventName: EventType) => allEvents[eventName];
+export const bindEvent = (eventName: EventType, callback: (...args: any[]) => any) => ({
+    [convertEvent(eventName)]: callback
+});
+export const bindEvents = (events: Events) => {
+    const newEvents:Events = {};
+
+    for (let eventKey in events) {
+        newEvents[convertEvent(eventKey as EventType)] = events[eventKey];
+    }
+};
