@@ -1,8 +1,8 @@
 {
   "name": "html-to-react-events",
   "version": "0.0.1",
-  "description": "Convert HTML event names to React event names.",
-  "main": "index.js",
+  "description": "Convert HTML event names to React event handler names.",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build"
