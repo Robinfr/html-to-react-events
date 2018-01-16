@@ -4,7 +4,8 @@
   "description": "Convert HTML event names to React event names.",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "html",
@@ -12,7 +13,15 @@
     "react"
   ],
   "author": "Robin Franken",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:Robin_f/html-to-react-events.git"
+  },
+  "license": "SEE LICENSE",
+  "homepage": "https://gitlab.com/Robin_f/html-to-react-events",
+  "bugs": {
+    "url": "https://gitlab.com/Robin_f/html-to-react-events/issues"
+  },
   "devDependencies": {
     "typescript": "^2.6.2"
   }
