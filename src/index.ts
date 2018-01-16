@@ -19,8 +19,6 @@ const allEvents = {
     ...formEvents
 };
 
-const convertEvent = (eventName: EventType) => {
-    return allEvents[ eventName ];
-};
+const convertEvent = (eventName: EventType) => allEvents[ eventName ];
 
 export default convertEvent;

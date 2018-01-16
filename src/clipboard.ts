@@ -1,11 +1,7 @@
-export enum ClipboardEvent {
-    Copy = 'copy',
-    Cut = 'cut',
-    Paste = 'paste'
-}
+export type ClipboardEvent = 'copy' | 'cut' | 'paste';
 
 export default {
-    [ClipboardEvent.Copy]: 'onCopy',
-    [ClipboardEvent.Cut]: 'onCut',
-    [ClipboardEvent.Paste]: 'onPaste',
+    'copy': 'onCopy',
+    'cut': 'onCut',
+    'paste': 'onPaste'
 }

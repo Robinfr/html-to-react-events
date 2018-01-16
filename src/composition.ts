@@ -1,11 +1,7 @@
-export enum CompositionEvent {
-    CompositionEnd  = 'compositionend',
-    CompositionStart = 'compositionstart',
-    CompositionUpdate = 'compositionupdate'
-}
+export type CompositionEvent = 'compositionend' | 'compositionstart' | 'compositionupdate';
 
 export default {
-    [CompositionEvent.CompositionEnd]: 'onCompositionEnd',
-    [CompositionEvent.CompositionStart]: 'onCompositionStart',
-    [CompositionEvent.CompositionUpdate]: 'onCompositionUpdate'
+    'compositionend': 'onCompositionEnd',
+    'compositionstart': 'onCompositionStart',
+    'compositionupdate': 'onCompositionUpdate'
 }

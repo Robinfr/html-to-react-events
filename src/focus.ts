@@ -1,9 +1,6 @@
-export enum FocusEvent {
-    Focus = 'focus',
-    Blur = 'blur'
-}
+export type FocusEvent = 'focus' | 'blur';
 
 export default {
-    [FocusEvent.Focus]: 'onFocus',
-    [FocusEvent.Blur]: 'onBlur'
+    'focus': 'onFocus',
+    'blur': 'onBlur'
 }

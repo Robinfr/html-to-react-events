@@ -1,11 +1,7 @@
-export enum KeyboardEvent {
-    KeyDown  = 'keydown',
-    KeyPress = 'keypress',
-    KeyUp = 'keyup'
-}
+export type KeyboardEvent = 'keydown' | 'keypress' | 'keyup';
 
 export default {
-    [KeyboardEvent.KeyDown]: 'onKeyDown',
-    [KeyboardEvent.KeyPress]: 'onKeyPress',
-    [KeyboardEvent.KeyUp]: 'onKeyUp'
+    'keydown': 'onKeyDown',
+    'keypress': 'onKeyPress',
+    'keyup': 'onKeyUp'
 }
