@@ -27,7 +27,7 @@ const allEvents = {
 
 export interface Events {
     [propName: string]: (...args: any[]) => any;
-};
+}
 
 export const convertEvent = (eventName: EventType) => allEvents[eventName];
 export const bindEvent = (eventName: EventType, callback: (...args: any[]) => any) => ({
@@ -39,4 +39,6 @@ export const bindEvents = (events: Events) => {
     for (let eventKey in events) {
         newEvents[convertEvent(eventKey as EventType)] = events[eventKey];
     }
+
+    return newEvents;
 };
