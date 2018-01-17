@@ -12,6 +12,7 @@ import transitionEvents, { TransitionEvent } from './transition';
 import uiEvents, { UIEvent } from './ui';
 import touchEvents, { TouchEvent } from './touch';
 import wheelEvents, { WheelEvent } from './wheel';
+import otherEvents, { OtherEvent } from './other';
 
 type EventType =
     | ClipboardEvent
@@ -27,7 +28,8 @@ type EventType =
     | TransitionEvent
     | UIEvent
     | TouchEvent
-    | WheelEvent;
+    | WheelEvent
+    | OtherEvent;
 
 const allEvents = {
     ...clipboardEvents,
@@ -43,7 +45,8 @@ const allEvents = {
     ...transitionEvents,
     ...uiEvents,
     ...touchEvents,
-    ...wheelEvents
+    ...wheelEvents,
+    ...otherEvents
 };
 
 export interface Events {
