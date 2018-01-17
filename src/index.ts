@@ -9,7 +9,8 @@ import animationEvents, { AnimationEvent } from './animation';
 import mediaEvents, { MediaEvent } from './media';
 import imageEvents, { ImageEvent } from './image';
 import transitionEvents, { TransitionEvent } from './transition';
-import uiEvents, { default as ui, UIEvent } from './ui';
+import uiEvents, { UIEvent } from './ui';
+import touchEvents, { TouchEvent } from './touch';
 
 type EventType =
     | ClipboardEvent
@@ -23,7 +24,8 @@ type EventType =
     | MediaEvent
     | ImageEvent
     | TransitionEvent
-    | UIEvent;
+    | UIEvent
+    | TouchEvent;
 
 const allEvents = {
     ...clipboardEvents,
@@ -37,7 +39,8 @@ const allEvents = {
     ...mediaEvents,
     ...imageEvents,
     ...transitionEvents,
-    ...uiEvents
+    ...uiEvents,
+    ...touchEvents
 };
 
 export interface Events {
