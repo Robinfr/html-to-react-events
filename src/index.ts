@@ -6,6 +6,7 @@ import formEvents, { FormEvent } from './form';
 import mouseEvents, { MouseEvent } from './mouse';
 import selectionEvents, { SelectionEvent } from './selection';
 import animationEvents, { AnimationEvent } from './animation';
+import mediaEvents, { MediaEvent } from './media';
 
 type EventType =
     | ClipboardEvent
@@ -15,7 +16,8 @@ type EventType =
     | FormEvent
     | MouseEvent
     | SelectionEvent
-    | AnimationEvent;
+    | AnimationEvent
+    | MediaEvent;
 
 const allEvents = {
     ...clipboardEvents,
@@ -25,7 +27,8 @@ const allEvents = {
     ...formEvents,
     ...mouseEvents,
     ...selectionEvents,
-    ...animationEvents
+    ...animationEvents,
+    ...mediaEvents
 };
 
 export interface Events {
