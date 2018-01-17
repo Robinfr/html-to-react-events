@@ -61,8 +61,6 @@ const MyComponent = ({onEdit, onConfirm}) => {
 ## Supported events
 For the supported events, see https://reactjs.org/docs/events.html.
 
-Note: some events still have to be added at the moment (see issues).
-
 ## TypeScript
 Typings are included in the library.
 
