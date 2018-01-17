@@ -8,6 +8,7 @@ import selectionEvents, { SelectionEvent } from './selection';
 import animationEvents, { AnimationEvent } from './animation';
 import mediaEvents, { MediaEvent } from './media';
 import imageEvents, { ImageEvent } from './image';
+import transitionEvents, { TransitionEvent } from './transition';
 
 type EventType =
     | ClipboardEvent
@@ -19,7 +20,8 @@ type EventType =
     | SelectionEvent
     | AnimationEvent
     | MediaEvent
-    | ImageEvent;
+    | ImageEvent
+    | TransitionEvent;
 
 const allEvents = {
     ...clipboardEvents,
@@ -31,7 +33,8 @@ const allEvents = {
     ...selectionEvents,
     ...animationEvents,
     ...mediaEvents,
-    ...imageEvents
+    ...imageEvents,
+    ...transitionEvents
 };
 
 export interface Events {
