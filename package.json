@@ -1,6 +1,6 @@
 {
   "name": "html-to-react-events",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Convert HTML event names to React event handler names.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
