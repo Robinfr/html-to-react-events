@@ -24,6 +24,21 @@
     "url": "https://gitlab.com/Robin_f/html-to-react-events/issues"
   },
   "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "jest": "^22.1.2",
+    "ts-jest": "^22.0.1",
     "typescript": "^2.6.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ]
   }
 }
