@@ -17,12 +17,12 @@
   "author": "Robin Franken",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com:Robin_f/html-to-react-events.git"
+    "url": "git+ssh://git@github.com:Robinfr/html-to-react-events.git"
   },
   "license": "SEE LICENSE",
-  "homepage": "https://gitlab.com/Robin_f/html-to-react-events",
+  "homepage": "https://github.com/Robinfr/html-to-react-events",
   "bugs": {
-    "url": "https://gitlab.com/Robin_f/html-to-react-events/issues"
+    "url": "https://github.com/Robinfr/html-to-react-events/issues"
   },
   "devDependencies": {
     "@types/jest": "^22.0.1",
