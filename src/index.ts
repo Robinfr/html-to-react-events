@@ -61,7 +61,11 @@ export const bindEvents = (events: Events) => {
     const newEvents: Events = {};
 
     for (let eventKey in events) {
-        newEvents[ convertEvent(eventKey as EventType) ] = events[ eventKey ];
+        const event = convertEvent(eventKey as EventType);
+        if(typeof event === 'undefined'){
+            continue;
+        }
+        newEvents[ event ] = events[ eventKey ];
     }
 
     return newEvents;
